@@ -2,13 +2,7 @@ import express from "express";
 import loginRouter from "../router.ts"
 import authMiddleware from './authMiddleware.ts'
 const app = express();
-
 app.use(express.json())
-
-
-app.use(cors());
-
-
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
