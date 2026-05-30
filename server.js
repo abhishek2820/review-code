@@ -1,5 +1,5 @@
 import express from "express";
-
+import loginRouter from "../router.ts"
 const app = express();
 
 
@@ -12,6 +12,8 @@ app.get("/healthz",(req,res)=>{
      health : "ok" 
   }) 
 })
+
+app.use(loginRouter());
 
 app.get("/", (req, res) => {
   res.send("Hello World");
