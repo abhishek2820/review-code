@@ -14,7 +14,6 @@ app.get("/healthz",(req,res)=>{
   }) 
 })
 
-app.use(loginRouter());
 
 app.get("/", (req, res) => {
   res.send("Hello World");
