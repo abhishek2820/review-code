@@ -4,9 +4,6 @@ import authMiddleware from './authMiddleware.ts'
 import redis from 'redis'
 const app = express();
 
-const password = req.body.password;
-
-
 app.use(express.json())
 
 
